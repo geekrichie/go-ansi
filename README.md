@@ -5,7 +5,15 @@
 后景色进行改变  
 
 ## ANSI的颜色对应表
-![image](./ansi.png)
+![image](./ansi.png)  
+文字补充：  
+0=reset  
+1=bold  
+4=underline  
+30-37=normal fg colors  
+40-47=normal bg colors  
+90-97=bright fg colors  
+100-107=bright bg colors  
 
 ## ANSI 代码规则
 ```go

@@ -16,7 +16,6 @@ func ChangeColor(fgcolor Color, fgbright bool, bgcolor Color, bgbright bool) {
 	if fgcolor == NONE && bgcolor == NONE {
 		return
 	}
-	//前面加0能够清除去前面的后景色
 	  var ansi = []byte("\x1B[")
       if fgcolor != NONE {
 		  text := []byte(strconv.Itoa(int(30+fgcolor-BLACK))+";")
